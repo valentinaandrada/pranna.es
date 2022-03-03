@@ -1,0 +1,41 @@
+.blogNews__item {
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.item__content {
+  background-color: #ded8d5ce;
+  padding: 1rem;
+  transform: translateY(85%);
+  transition: transform 500ms ease;
+}
+
+.blogNews__item:hover .item__content {
+  transform: translateY(0);
+  transition-delay: 500ms;
+}
+
+.bg-pt-sz {
+  background-position: center center;
+  background-size: cover;
+}
+
+.item1 {
+  background-image: url(../img/news-mayo.jpg);
+  @extend .bg-pt-sz;
+}
+
+.item2 {
+  background-image: url(../img/news-sabor.png);
+  @extend .bg-pt-sz;
+}
+
+.item3 {
+  background-image: url(../img/news-mayo.jpg);
+  @extend .bg-pt-sz;
+}
+
+.item4 {
+  background-image: url(../img/news-sabor.png);
+  @extend .bg-pt-sz;
+}

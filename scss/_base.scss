@@ -1,0 +1,55 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+  font-family: $ft-primary;
+  font-size: 16px;
+}
+
+.bg-grad {
+  background: linear-gradient(180deg, $clr-primary 50%, $clr-secondary 85%);
+}
+
+.hidden {
+  display: none;
+}
+
+.typo-min {
+  font-size: 0.8rem;
+}
+
+.h60vh {
+  height: 60vh;
+}
+
+.nav {
+  background-color: #ded8d57a;
+}
+
+.nav-logo {
+  width: 10rem;
+}
+
+.hero-btn {
+  box-sizing: content-box;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid $clr-btn;
+  border-radius: 0.5rem;
+  font-family: $ft-primary;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: $clr-btn;
+
+  &:hover {
+    background-color: $clr-btn;
+    color: $clr-primary;
+    text-decoration: none;
+  }
+}

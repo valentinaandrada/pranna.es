@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-
-/***************** General styles *****************/
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -14,11 +13,20 @@ body {
 }
 
 .bg-grad {
-  background: linear-gradient(180deg, #ded8d5 50%, #f8f9fa 85%); 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ded8d5), color-stop(85%, #f8f9fa));
+  background: linear-gradient(180deg, #ded8d5 50%, #f8f9fa 85%);
 }
 
 .hidden {
   display: none;
+}
+
+.typo-min {
+  font-size: 0.8rem;
+}
+
+.h60vh {
+  height: 60vh;
 }
 
 .nav {
@@ -30,7 +38,8 @@ body {
 }
 
 .hero-btn {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   padding: 0.5rem 1.2rem;
   border: 1px solid #15322c;
   border-radius: 0.5rem;
@@ -48,61 +57,50 @@ body {
   text-decoration: none;
 }
 
-.typo-min {
-  font-size: 0.8rem;
-}
-
-.h60vh {
-  height: 60vh;
-}
-
-
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-button:hover {
-  cursor: pointer;
-}
-
-
-/***************** Section: NOVEDADES *****************/
-
 .blogNews__item {
   overflow: hidden;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
 }
 
 .item__content {
   background-color: #ded8d5ce;
   padding: 1rem;
-  transform: translateY(85%);
+  -webkit-transform: translateY(85%);
+          transform: translateY(85%);
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
 }
 
 .blogNews__item:hover .item__content {
-  transform: translateY(0);
-  transition-delay: 500ms;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
+
+.bg-pt-sz, .item1, .item2, .item3, .item4 {
+  background-position: center center;
+  background-size: cover;
 }
 
 .item1 {
   background-image: url(../img/news-mayo.jpg);
-  background-position: center center;
-  background-size: cover;
 }
 
 .item2 {
   background-image: url(../img/news-sabor.png);
-  background-position: center center;
-  background-size: cover;
 }
 
 .item3 {
   background-image: url(../img/news-mayo.jpg);
-  background-position: center center;
-  background-size: cover;
 }
 
 .item4 {
   background-image: url(../img/news-sabor.png);
-  background-position: center center;
-  background-size: cover;
 }
+/*# sourceMappingURL=styles.css.map */
