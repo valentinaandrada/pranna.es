@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***************** General styles *****************/
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.bg-grad {
+  background: linear-gradient(180deg, #ded8d5 50%, #f8f9fa 85%); 
+}
+
+.hidden {
+  display: none;
+}
+
+.nav {
+  background-color: #ded8d57a;
+}
+
+.nav-logo {
+  width: 10rem;
+}
+
+.hero-btn {
+  box-sizing: content-box;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #15322c;
+  border-radius: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #15322c;
+}
+
+.hero-btn:hover {
+  background-color: #15322c;
+  color: #ded8d5;
+  text-decoration: none;
+}
+
+.typo-min {
+  font-size: 0.8rem;
+}
+
+.h60vh {
+  height: 60vh;
+}
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  cursor: pointer;
+}
+
+
+/***************** Section: NOVEDADES *****************/
+
+.blogNews__item {
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.item__content {
+  background-color: #ded8d5ce;
+  padding: 1rem;
+  transform: translateY(85%);
+  transition: transform 500ms ease;
+}
+
+.blogNews__item:hover .item__content {
+  transform: translateY(0);
+  transition-delay: 500ms;
+}
+
+.item1 {
+  background-image: url(../img/news-mayo.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.item2 {
+  background-image: url(../img/news-sabor.png);
+  background-position: center center;
+  background-size: cover;
+}
+
+.item3 {
+  background-image: url(../img/news-mayo.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.item4 {
+  background-image: url(../img/news-sabor.png);
+  background-position: center center;
+  background-size: cover;
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranna.es</title>
+
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="..\css\styles.css">
+
+    <!-- Animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <!-- PROJECTO FINAL: Sitio web de PRANNA, startup de venta de hamburguesas veganas en Barcelona -->
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light nav">
+      <div class="container">
+        <a class="navbar-brand" href="..\index.html"
+          ><img
+            class="img-fluid nav-logo hidden"
+            src="..\img\pranna-logo.png"
+            alt="Logo PRANNA"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="pages\about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages\blog.html">Novedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages\form.html">Pedidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages\contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HERO -->
+      <section class="bg-grad d-xl-flex p-5">
+        <div class="py-5 text-center text-xl-start animate__animated animate__backInLeft">
+          <img
+            src="img\pranna-full-logo.png"
+            alt="Logo PRANNA"
+            class="img-fluid mt-4"
+          />
+          <div class="ps-1 ps-lg-5">
+            <p class="my-4">
+              Comer
+              <strong>rico, saludable y libre de maltrato animal </strong><br />
+              no es una moda, es <strong>un estilo de vida.</strong>
+              <br />
+              Prueba nuestras hamburguesas y disfruta de un plato increible
+            </p>
+            <a
+              href="pages\form.html"
+              class="hero-btn"
+              type="button"
+            >
+              ¡Pedí las tuyas!
+            </a>
+          </div>
+        </div>
+        <img
+          class="img-fluid w-50 position-absolute end-0 d-none d-xl-block"
+          src="img\hero-img.png"
+          alt="Hamburguesas PRANNA en tabla"
+        />
+      </section>
+
+      <!-- SECCION: QUIENES SOMOS -->
+      <section class="p-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <img
+              class="col-md-8 col-lg-6 img-fluid ps-0"
+              src="img\pranna-packaging.jpg"
+              alt="Pranna packaging"
+            />
+            <div
+              class="col-md-4 col-lg-6 mt-sm-4 mt-md-0 py-4 py-md-0 align-self-xl-end pe-xl-5"
+            >
+              <h2>Sobre PRANNA</h2>
+              <p>
+                Amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi.
+              </p>
+              <button class="btn btn-outline-danger">Conoce mas</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCION: ELEGI PRANNA -->
+      <section class="p-5">
+        <div class="container">
+          <h2>Porqué PRANNA</h2>
+          <div class="row pt-4 g-2">
+            <div class="col-md-6 col-lg-3 p-3 fw-light">
+              <h4>Característica 1</h4>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-3 p-3 fw-light">
+              <h4>Característica 2</h4>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-3 p-3 fw-light">
+              <h4>Característica 3</h4>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est.
+              </p>
+            </div>
+            <div class="col-md-6 col-lg-3 p-3 fw-light">
+              <h4>Característica 4</h4>
+              <p>
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. Neque porro quisquam est.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCION: NUESTROS SABORES -->
+      <section class="p-5 bg-light">
+        <div class="container">
+          <h2>Nuestros sabores</h2>
+          <div class="row pt-4 g-2">
+            <div class="col-md-3 col-lg-3 col-sm-6">
+              <div class="card bg-light text-dark">
+                <img
+                  class="img-fluid"
+                  src="img\sabor-clasica.png"
+                  alt="Hamburguesa PRANNA Clásica"
+                />
+                <div class="card-body text-center">
+                  <h3>Clásica</h3>
+                  <p class="d-none d-md-block fw-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio, minus?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-6">
+              <div class="card bg-light text-dark">
+                <img
+                  class="img-fluid"
+                  src="img\sabor-original.png"
+                  alt="Hamburguesa PRANNA Original"
+                />
+                <div class="card-body text-center">
+                  <h3>Original</h3>
+                  <p class="d-none d-md-block fw-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio, minus?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-6">
+              <div class="card bg-light text-dark">
+                <img
+                  class="img-fluid"
+                  src="img\sabor-gourmet.png"
+                  alt="Hamburguesa PRANNA Gourmet"
+                />
+                <div class="card-body text-center">
+                  <h3>Gourmet</h3>
+                  <p class="d-none d-md-block fw-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio, minus?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-6">
+              <div class="card bg-light text-dark">
+                <img
+                  class="img-fluid"
+                  src="img\sabor-deliciosa.png"
+                  alt="Hamburguesa PRANNA Deliciosa"
+                />
+                <div class="card-body text-center">
+                  <h3>Deliciosa</h3>
+                  <p class="d-none d-md-block fw-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio, minus?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BOTON A FORMULARIO -->
+      <div class="position-relative">
+        <a
+          class="btn btn-danger position-absolute start-50 translate-middle text-uppercase"
+          href="pages\form.html"
+          >Combinalas como quieras</a
+        >
+      </div>
+
+      <!-- SECCION: TESTIMONIOS -->
+      <section class="p-3">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner text-center">
+            <div class="carousel-item active px-md-5">
+              <div
+                class="d-md-flex align-items-center justify-content-center mx-auto"
+              >
+                <div class="mx-5 pt-5 pt-md-0 px-lg-5">
+                  <p class="fst-italic">
+                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat nemo natus excepturi tempore corporis consequatur
+                    non, magnam quasi esse."
+                  </p>
+                  <p>Alejandra</p>
+                </div>
+                <img
+                  src="img\testimonial-1.png"
+                  alt="Foto de testimonio"
+                  class="img-fluid rounded-circle my-5 pe-md-5 me-lg-5"
+                  style="width: 250px"
+                />
+              </div>
+            </div>
+            <div class="carousel-item px-md-5">
+              <div
+                class="d-md-flex align-items-center justify-content-center mx-auto"
+              >
+                <div class="mx-5 pt-5 pt-md-0 px-lg-5">
+                  <p class="fst-italic">
+                    "Lorem, ipsum dolor sit amxt consectetur adipisicing elit.
+                    Repellat nemo natus excepturi tempore corporis consequatur
+                    non, magnam quasi esse."
+                  </p>
+                  <p>Alejandra</p>
+                </div>
+                <img
+                  src="img\testimonial-1.png"
+                  alt="Foto de testimonio"
+                  class="img-fluid rounded-circle my-5 pe-md-5 me-lg-5"
+                  style="width: 250px"
+                />
+              </div>
+            </div>
+            <div class="carousel-item px-md-5">
+              <div
+                class="d-md-flex align-items-center justify-content-center mx-auto"
+              >
+                <div class="mx-5 pt-5 pt-md-0 px-lg-5">
+                  <p class="fst-italic">
+                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat nemo natus excepturi tempore corporis consequatur
+                    non, magnam quasi esse."
+                  </p>
+                  <p>Alejandra</p>
+                </div>
+                <img
+                  src="img\testimonial-1.png"
+                  alt="Foto de testimonio"
+                  class="img-fluid rounded-circle my-5 pe-md-5 me-lg-5"
+                  style="width: 250px"
+                />
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-light px-5 border-top">
+      <img
+        class="img-fluid position-absolute translate-middle-y ms-5 d-none d-lg-block"
+        style="z-index: 1; height: 250px"
+        src="..\img\pranna-logo-round.png"
+        alt="pranna-logo"
+      />
+      <div class="container-fluid">
+        <div
+          class="d-md-flex align-items-center justify-content-end pt-3 typo-min"
+        >
+          <div class="p-3">
+            <h4>Servicios</h4>
+            <div>
+              <a
+                href="pages\form.html"
+                class="text-decoration-none fw-light link-secondary"
+                >Pedido Minorista</a
+              ><br />
+              <a
+                href="pages\contact.html"
+                class="text-decoration-none fw-light link-secondary"
+                >Pedido Mayorista</a
+              >
+            </div>
+          </div>
+          <div class="p-3">
+            <h4>Empresa</h4>
+            <div>
+              <a
+                href="pages\about.html"
+                class="text-decoration-none fw-light link-secondary"
+                >Quienes Somos</a
+              ><br />
+              <a
+                href="pages\about.html"
+                class="text-decoration-none fw-light link-secondary"
+                >Nuestro Impacto</a
+              >
+            </div>
+          </div>
+          <div class="p-3">
+            <h4>Contacto</h4>
+            <div>
+              <a
+                href="mailto:pranna.es@gmail.com"
+                class="text-decoration-none fw-light link-secondary"
+                >pranna.es@gmail.com</a
+              ><br />
+              <a
+                href="tel:+34678567876"
+                class="text-decoration-none fw-light link-secondary"
+                >666 66 66 66</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid pt-5 px-5 position-relative">
+          <div
+            class="d-md-flex align-items-center justify-content-md-between text-center"
+          >
+            <p class="fw-light">© Pranna.es / Mejar saludable</p>
+            <div class="align-items-center">
+              <a
+                href="https://www.facebook.com/prannaes-109436358001067"
+                target="_blank"
+                ><i class="bi bi-facebook text-dark fs-4 m-1"></i
+              ></a>
+              <a href="https://www.instagram.com/pranna.es/" target="_blank"
+                ><i class="bi bi-instagram text-dark fs-4 m-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

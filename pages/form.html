@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranna.es | Pedidos</title>
+
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="..\css\styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light nav">
+      <div class="container">
+        <a class="navbar-brand" href="..\index.html"
+          ><img
+            class="img-fluid nav-logo"
+            src="..\img\pranna-logo.png"
+            alt="Logo PRANNA"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Novedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="form.html">Pedidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- FORMULARIO -->
+      <section class="bg-grad pt-5 py-md-5">
+        <div class="container py-5">
+          <div class="row g-5 py-5">
+            <div class="col-lg-6">
+              <div class="pb-4">
+                <h1>HACENOS TU PEDIDO</h1>
+                <p>
+                  Para pedidos mayoristas,
+                  <a href="contact.html">contactanos</a>
+                </p>
+              </div>
+              <form action="" class="container ps-0 pb-5">
+                <fieldset class="row">
+                  <legend class="form-label fs-5">
+                    ¡Combínalas como quieras!
+                  </legend>
+                  <div class="d-flex justify-content-between mt-2">
+                    <div>
+                      <label for="sab-clasica" class="form-label"
+                        >Sabor CLASICA</label
+                      >
+                      <p class="fw-light typo-min me-5 fst-italic">
+                        Los clásicos son esas cosas que nunca cambian, porque
+                        así como están son perfectas. Así de clásica y perfecta
+                        es nuestra burger con alubias y quínoa.
+                      </p>
+                    </div>
+                    <div>
+                      <select name="sab-clasica" class="ms-2 text-center">
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                        <option value="4">4 unidades</option>
+                        <option value="6">6 unidades</option>
+                        <option value="9">9 unidades</option>
+                        <option value="12">12 unidades</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between mt-2">
+                    <div>
+                      <label for="sab-original" class="form-label"
+                        >Sabor ORIGINAL</label
+                      >
+                      <p class="fw-light typo-min me-5 fst-italic">
+                        Nuestra burger ORIGINAL tiene garbanzos y mix de
+                        semillas más un sabor EXQUISITO!
+                      </p>
+                    </div>
+                    <div>
+                      <select name="sab-original" class="ms-2 text-center">
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                        <option value="4">4 unidades</option>
+                        <option value="6">6 unidades</option>
+                        <option value="9">9 unidades</option>
+                        <option value="12">12 unidades</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between mt-2">
+                    <div>
+                      <label for="sab-gourmet" class="form-label"
+                        >Sabor GOURMET</label
+                      >
+                      <p class="fw-light typo-min me-5 fst-italic">
+                        El potente color verde que nos acampaña a todas partes
+                        para mostrarte nuestro compromiso saludable.. Como la
+                        hamburguesa GOURMET de espinaca y quinoa!
+                      </p>
+                    </div>
+                    <div>
+                      <select name="sab-gourmet" class="ms-2 text-center">
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                        <option value="4">4 unidades</option>
+                        <option value="6">6 unidades</option>
+                        <option value="9">9 unidades</option>
+                        <option value="12">12 unidades</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between mt-2">
+                    <div>
+                      <label for="sab-sabrosa" class="form-label"
+                        >Sabor SABROSA</label
+                      >
+                      <p class="fw-light typo-min me-5 fst-italic">
+                        ¿Sabéis cómo se dice cuando algo está sazonado perfecto,
+                        combina los sabores y es muy grato al paladar?...
+                        SABROSA porque entran en una danza perfecta de cebollas
+                        caramelizadas, arroz, setas y miel.
+                      </p>
+                    </div>
+                    <div>
+                      <select name="sab-sabrosa" class="ms-2 text-center">
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                        <option value="4">4 unidades</option>
+                        <option value="6">6 unidades</option>
+                        <option value="9">9 unidades</option>
+                        <option value="12">12 unidades</option>
+                      </select>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="row g-2">
+                  <legend class="form-label fs-5">Tus Datos</legend>
+                  <div class="col-lg-6">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="firstname"
+                      placeholder="Nombre"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="lastname"
+                      placeholder="Apellido"
+                    />
+                  </div>
+                  <div class="col-lg-12">
+                    <input
+                      class="form-control"
+                      type="email"
+                      name="email"
+                      placeholder="Correo electrónico"
+                    />
+                  </div>
+                  <div class="col-lg-12">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="phone"
+                      pattern="[0-9]+"
+                      placeholder="Telefono"
+                    />
+                  </div>
+                </fieldset>
+
+                <fieldset class="row g-2">
+                  <legend class="form-label mt-4">Datos de la Entrega</legend>
+                  <div class="col-lg-12">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="address"
+                      placeholder="Dirección de entrega"
+                    />
+                  </div>
+                  <div class="col-lg-8">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="city"
+                      placeholder="Localidad"
+                    />
+                  </div>
+                  <div class="col-lg-4">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="cp"
+                      placeholder="CP"
+                    />
+                  </div>
+                  <div class="col-lg-12">
+                    <input
+                      class="form-control"
+                      type="date"
+                      name="date"
+                      placeholder="Elige el día de entrega"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea3"
+                      rows="7"
+                      name="comment"
+                      placeholder="Ingresa instrucciones de entrega o comentarios..."
+                    ></textarea>
+                  </div>
+                </fieldset>
+
+                <fieldset class="my-3">
+                  <legend class="form-label fs-5">Elegir método de pago</legend>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="0" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Efectivo
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Bizum
+                    </label>
+                  </div>
+                </fieldset>
+
+                <input type="submit" value="ENVIAR PEDIDO" class="btn btn-primary" />
+                <input type="reset" value="BORRAR" class="btn btn-primary" />
+              </form>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="..\img\order-img.jpg"
+                alt="Sabores de PRANNA"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-light px-5 border-top">
+      <img
+        class="img-fluid position-absolute translate-middle-y ms-5 d-none d-lg-block"
+        style="z-index: 1; height: 250px"
+        src="..\img\pranna-logo-round.png"
+        alt="pranna-logo"
+      />
+      <div class="container-fluid">
+        <div
+          class="d-md-flex align-items-center justify-content-end pt-3 typo-min"
+        >
+          <div class="p-3">
+            <h4>Servicios</h4>
+            <div>
+              <a
+                href="form.html"
+                class="text-decoration-none fw-light link-secondary"
+                >Pedido Minorista</a
+              ><br />
+              <a
+                href="contact.html"
+                class="text-decoration-none fw-light link-secondary"
+                >Pedido Mayorista</a
+              >
+            </div>
+          </div>
+          <div class="p-3">
+            <h4>Empresa</h4>
+            <div>
+              <a
+                href="about.html"
+                class="text-decoration-none fw-light link-secondary"
+                >Quienes Somos</a
+              ><br />
+              <a
+                href="about.html"
+                class="text-decoration-none fw-light link-secondary"
+                >Nuestro Impacto</a
+              >
+            </div>
+          </div>
+          <div class="p-3">
+            <h4>Contacto</h4>
+            <div>
+              <a
+                href="mailto:pranna.es@gmail.com"
+                class="text-decoration-none fw-light link-secondary"
+                >pranna.es@gmail.com</a
+              ><br />
+              <a
+                href="tel:+34678567876"
+                class="text-decoration-none fw-light link-secondary"
+                >666 66 66 66</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid pt-5 px-5 position-relative">
+          <div
+            class="d-md-flex align-items-center justify-content-md-between text-center"
+          >
+            <p class="fw-light">© Pranna.es / Mejar saludable</p>
+            <div class="align-items-center">
+              <a
+                href="https://www.facebook.com/prannaes-109436358001067"
+                target="_blank"
+                ><i class="bi bi-facebook text-dark fs-4 m-1"></i
+              ></a>
+              <a href="https://www.instagram.com/pranna.es/" target="_blank"
+                ><i class="bi bi-instagram text-dark fs-4 m-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
