@@ -21,7 +21,7 @@
     />
 
     <!-- Link to CSS -->
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\styles.css" />
 
     <!-- Animations -->
     <link
@@ -77,7 +77,9 @@
     <main>
       <!-- HERO -->
       <section class="bg-grad d-xl-flex p-5">
-        <div class="py-5 text-center text-xl-start animate__animated animate__backInLeft">
+        <div
+          class="py-5 text-center text-xl-start animate__animated animate__backInLeft"
+        >
           <img
             src="img\pranna-full-logo.png"
             alt="Logo PRANNA"
@@ -89,13 +91,9 @@
               <strong>rico, saludable y libre de maltrato animal </strong><br />
               no es una moda, es <strong>un estilo de vida.</strong>
               <br />
-              Prueba nuestras hamburguesas y disfruta de un plato increible
+              Prueba nuestras hamburguesas y disfruta de un plato increible!
             </p>
-            <a
-              href="pages\form.html"
-              class="hero-btn"
-              type="button"
-            >
+            <a href="pages\form.html" class="btn" type="button">
               ¡Pedí las tuyas!
             </a>
           </div>
@@ -119,13 +117,18 @@
             <div
               class="col-md-4 col-lg-6 mt-sm-4 mt-md-0 py-4 py-md-0 align-self-xl-end pe-xl-5"
             >
-              <h2>Sobre PRANNA</h2>
-              <p>
-                Amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi.
+              <h2 class="title">Sobre PRANNA</h2>
+              <p class="pt-3">
+                Pranna es una comunidad que apuesta por una alimentación
+                <strong>responsable</strong> y <strong>saludable</strong>. Te
+                proponemos que le des un respiro a tu cuerpo alimentandote de
+                manera rica, práctica y consciente.
               </p>
-              <button class="btn btn-outline-danger">Conoce mas</button>
+              <p>
+                PRANNA es <strong>comida hecha con amor ♥</strong
+                ><span class="text-animate">&#160;</span>
+              </p>
+              <button class="btn">Conoce mas</button>
             </div>
           </div>
         </div>
@@ -134,38 +137,59 @@
       <!-- SECCION: ELEGI PRANNA -->
       <section class="p-5">
         <div class="container">
-          <h2>Porqué PRANNA</h2>
+          <h2 class="title">Porqué PRANNA</h2>
           <div class="row pt-4 g-2">
             <div class="col-md-6 col-lg-3 p-3 fw-light">
-              <h4>Característica 1</h4>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est.
+              <h4 class="num">1</h4>
+              <p class="char">100% vegetales</p>
+              <p class="text-justify">
+                Nuestras hamburguesas son 100% vegetales.
+                <span class="text-bg"
+                  >No contienen ningún ingrediente de origen animal</span
+                >
+                y sumale lo amigables que son con el medio ambiente... una
+                hamburguesa a base de plantas utiliza 75 % menos de agua, 95%
+                menos de tierra y genera 87% menos de emisiones de gases de
+                efecto invernadero.
               </p>
             </div>
             <div class="col-md-6 col-lg-3 p-3 fw-light">
-              <h4>Característica 2</h4>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est.
+              <h4 class="num">2</h4>
+              <p class="char">Super saludables</p>
+              <p class="text-justify">
+                Nuestras hamburguesas carecen de hormonas, carcinógenos,
+                lácteos, grasas saturadas y trans, por el contrario están
+                <span class="text-bg"
+                  >llenas de fibra, nutrientes, proteínas, ¡SÍ, PROTEÍNAS!</span
+                >
+                Tienen el potencial de nutrir tu cuerpo de todas las formas que
+                una hamburguesa de carne nunca podría.
               </p>
             </div>
             <div class="col-md-6 col-lg-3 p-3 fw-light">
-              <h4>Característica 3</h4>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est.
+              <h4 class="num">3</h4>
+              <p class="char">200gr de puro sabor</p>
+              <p class="text-justify">
+                Si señor... no es que querramos presumir, pero tenemos las
+                <span class="text-bg"
+                  >únicas hamburguesas del mercado que pesan ¡200 grs
+                  reales!</span
+                >
+                Y no solo eso, vas a flipar cuando pruebes nuestros sabores.
+                Nunca pensaste que comer vegano podía ser taaan rico!
               </p>
             </div>
             <div class="col-md-6 col-lg-3 p-3 fw-light">
-              <h4>Característica 4</h4>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est.
+              <h4 class="num">4</h4>
+              <p class="char">y MUY practicas!</p>
+              <p class="text-justify">
+                Recibirás tus pranna congeladas individualmente, envueltas en
+                nuestro eco-packaging que guardarás en tu congelador. Te antojas
+                y
+                <span class="text-bg">
+                  directo al horno, a la plancha o a la parrilla.. como las
+                  prefieras!
+                </span>
               </p>
             </div>
           </div>
@@ -175,10 +199,12 @@
       <!-- SECCION: NUESTROS SABORES -->
       <section class="p-5 bg-light">
         <div class="container">
-          <h2>Nuestros sabores</h2>
+          <h2 class="title">Nuestros sabores</h2>
           <div class="row pt-4 g-2">
             <div class="col-md-3 col-lg-3 col-sm-6">
-              <div class="card bg-light text-dark">
+              <div
+                class="card border-light animate__animated animate__flipInY"
+              >
                 <img
                   class="img-fluid"
                   src="img\sabor-clasica.png"
@@ -186,15 +212,18 @@
                 />
                 <div class="card-body text-center">
                   <h3>Clásica</h3>
-                  <p class="d-none d-md-block fw-light">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Optio, minus?
+                  <p class="d-none d-md-block fw-light typo-min">
+                    Los clásicos son esas cosas que nunca cambian, porque así
+                    como están son perfectas. Así de clásica y perfecta es
+                    nuestra burger con alubias y quínoa.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-md-3 col-lg-3 col-sm-6">
-              <div class="card bg-light text-dark">
+              <div
+                class="card border-light animate__animated animate__flipInY animate__delay-1s"
+              >
                 <img
                   class="img-fluid"
                   src="img\sabor-original.png"
@@ -202,15 +231,17 @@
                 />
                 <div class="card-body text-center">
                   <h3>Original</h3>
-                  <p class="d-none d-md-block fw-light">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Optio, minus?
+                  <p class="d-none d-md-block fw-light typo-min">
+                    Nuestra burger ORIGINAL tiene garbanzos y mix de semillas
+                    más un sabor EXQUISITO!
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-md-3 col-lg-3 col-sm-6">
-              <div class="card bg-light text-dark">
+              <div
+                class="card border-light animate__animated animate__flipInY animate__delay-2s"
+              >
                 <img
                   class="img-fluid"
                   src="img\sabor-gourmet.png"
@@ -218,25 +249,30 @@
                 />
                 <div class="card-body text-center">
                   <h3>Gourmet</h3>
-                  <p class="d-none d-md-block fw-light">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Optio, minus?
+                  <p class="d-none d-md-block fw-light typo-min">
+                    El potente color verde que nos acampaña a todas partes
+                        para mostrarte nuestro compromiso saludable.. Como la
+                        hamburguesa GOURMET de espinaca y quinoa!
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-md-3 col-lg-3 col-sm-6">
-              <div class="card bg-light text-dark">
+              <div
+                class="card border-light animate__animated animate__flipInY animate__delay-3s"
+              >
                 <img
                   class="img-fluid"
-                  src="img\sabor-deliciosa.png"
+                  src="img\sabor-sabrosa.png"
                   alt="Hamburguesa PRANNA Deliciosa"
                 />
                 <div class="card-body text-center">
-                  <h3>Deliciosa</h3>
-                  <p class="d-none d-md-block fw-light">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Optio, minus?
+                  <h3>Sabrosa</h3>
+                  <p class="d-none d-md-block fw-light typo-min">
+                    ¿Sabéis cómo se dice cuando algo está sazonado perfecto,
+                        combina los sabores y es muy grato al paladar?...
+                        SABROSA porque entran en una danza perfecta de cebollas
+                        caramelizadas, arroz, setas y miel.
                   </p>
                 </div>
               </div>
@@ -248,7 +284,7 @@
       <!-- BOTON A FORMULARIO -->
       <div class="position-relative">
         <a
-          class="btn btn-danger position-absolute start-50 translate-middle text-uppercase"
+          class="btn bg-light position-absolute start-50 translate-middle text-uppercase"
           href="pages\form.html"
           >Combinalas como quieras</a
         >
@@ -268,9 +304,10 @@
               >
                 <div class="mx-5 pt-5 pt-md-0 px-lg-5">
                   <p class="fst-italic">
-                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat nemo natus excepturi tempore corporis consequatur
-                    non, magnam quasi esse."
+                    "¡Que buena opción de hamburguesa vegana! Original es mi
+                    favorita sin duda. Son tan prácticas y rápidas de cocinar
+                    que no podría organizar mi semana sin mis prannas en el
+                    congelador."
                   </p>
                   <p>Alejandra</p>
                 </div>
@@ -288,14 +325,14 @@
               >
                 <div class="mx-5 pt-5 pt-md-0 px-lg-5">
                   <p class="fst-italic">
-                    "Lorem, ipsum dolor sit amxt consectetur adipisicing elit.
-                    Repellat nemo natus excepturi tempore corporis consequatur
-                    non, magnam quasi esse."
+                    "Son realmente deliciosas y.. ¡enormes! Tenerlas en el
+                    congelador me da la tranquilidad de llegar a casa sin tiempo
+                    y aún así comer rico y saludable."
                   </p>
-                  <p>Alejandra</p>
+                  <p>Sofía</p>
                 </div>
                 <img
-                  src="img\testimonial-1.png"
+                  src="img\testimonial-3.png"
                   alt="Foto de testimonio"
                   class="img-fluid rounded-circle my-5 pe-md-5 me-lg-5"
                   style="width: 250px"
@@ -308,14 +345,15 @@
               >
                 <div class="mx-5 pt-5 pt-md-0 px-lg-5">
                   <p class="fst-italic">
-                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat nemo natus excepturi tempore corporis consequatur
-                    non, magnam quasi esse."
+                    "Las he probado en lo de un amigo, desde ese momento no me
+                    faltan mis hamburguesas pranna en el congelador. Destacar
+                    también la comodidad de hacer el pedido y recibir el paquete
+                    en el día y hora pactado. Impecable."
                   </p>
-                  <p>Alejandra</p>
+                  <p>Javier</p>
                 </div>
                 <img
-                  src="img\testimonial-1.png"
+                  src="img\testimonial-2.png"
                   alt="Foto de testimonio"
                   class="img-fluid rounded-circle my-5 pe-md-5 me-lg-5"
                   style="width: 250px"

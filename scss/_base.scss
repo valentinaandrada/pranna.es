@@ -15,6 +15,14 @@ body {
   background: linear-gradient(180deg, $clr-primary 50%, $clr-secondary 85%);
 }
 
+.nav {
+  background-color: $clr-primary;
+}
+
+.nav-logo {
+  width: 10rem;
+}
+
 .hidden {
   display: none;
 }
@@ -23,19 +31,16 @@ body {
   font-size: 0.8rem;
 }
 
+.text-bg {
+  background-color: #6464642f;
+  font-style: italic;
+}
+
 .h60vh {
   height: 60vh;
 }
 
-.nav {
-  background-color: #ded8d57a;
-}
-
-.nav-logo {
-  width: 10rem;
-}
-
-.hero-btn {
+.btn {
   box-sizing: content-box;
   padding: 0.5rem 1.2rem;
   border: 1px solid $clr-btn;
@@ -52,4 +57,49 @@ body {
     color: $clr-primary;
     text-decoration: none;
   }
+}
+
+.title {
+  font-family: $ft-accent;
+  font-weight: 600;
+  background-color: #6464642f;
+  display: inline;
+}
+
+.text-animate {
+  position: absolute;
+  right: 0;
+  width: 100;
+  background-color: $clr-secondary;
+  border-left: 1px solid $clr-btn;
+
+  animation: writing 5s infinite;
+}
+
+@keyframes writing {
+  from {
+    width: 49%;
+  }
+  to {
+    width: 27%;
+  }
+}
+
+.num {
+  font-family: $ft-accent;
+  font-weight: 700;
+  font-size: 5rem;
+  color: #6464641e;
+}
+
+.char {
+  font-family: $ft-accent;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: $clr-accent;
+}
+
+.card {
+  height: 100%;
+  border-radius: 1rem;
 }

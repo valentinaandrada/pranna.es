@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Roboto:wght@100;300;400;700;900&display=swap');
 // Colors
 $clr-primary: #ded8d5;
 $clr-secondary: #f8f9fa;
 $clr-btn: #15322c;
+$clr-accent: #f37b57;
 
 // Font
-$ft-primary: "Montserrat", sans-serif;
+$ft-primary: "Roboto", sans-serif;
+$ft-accent: "Oswald", sans-serif;

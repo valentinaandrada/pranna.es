@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Roboto:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Roboto:wght@100;300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.bg-grad {
+  background: linear-gradient(180deg, #ded8d5 50%, #f8f9fa 85%);
+}
+
+.nav {
+  background-color: #ded8d5;
+}
+
+.nav-logo {
+  width: 10rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.typo-min {
+  font-size: 0.8rem;
+}
+
+.text-bg {
+  background-color: #6464642f;
+  font-style: italic;
+}
+
+.h60vh {
+  height: 60vh;
+}
+
+.btn {
+  box-sizing: content-box;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #15322c;
+  border-radius: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #15322c;
+}
+.btn:hover {
+  background-color: #15322c;
+  color: #ded8d5;
+  text-decoration: none;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  background-color: #6464642f;
+  display: inline;
+}
+
+.text-animate {
+  position: absolute;
+  right: 0;
+  width: 100;
+  background-color: #f8f9fa;
+  border-left: 1px solid #15322c;
+  animation: writing 5s infinite;
+}
+
+@keyframes writing {
+  from {
+    width: 49%;
+  }
+  to {
+    width: 27%;
+  }
+}
+.num {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  color: #6464641e;
+}
+
+.char {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #f37b57;
+}
+
+.card {
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.blogNews__item {
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+
+.item__content {
+  background-color: #ded8d5ce;
+  padding: 1rem;
+  transform: translateY(85%);
+  transition: transform 500ms ease;
+}
+
+.blogNews__item:hover .item__content {
+  transform: translateY(0);
+  transition-delay: 500ms;
+}
+
+.bg-pt-sz, .item4, .item3, .item2, .item1 {
+  background-position: center center;
+  background-size: cover;
+}
+
+.item1 {
+  background-image: url(../img/news-mayo.jpg);
+}
+
+.item2 {
+  background-image: url(../img/news-sabor.png);
+}
+
+.item3 {
+  background-image: url(../img/news-mayo.jpg);
+}
+
+.item4 {
+  background-image: url(../img/news-sabor.png);
+}
+
+/*# sourceMappingURL=styles.css.map */
