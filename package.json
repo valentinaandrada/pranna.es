@@ -1,0 +1,19 @@
+{
+  "name": "00-pf_pranna.es",
+  "version": "1.0.0",
+  "description": "Sitio web creado con HTML y CSS.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valentinaandrada/pranna.es.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valentinaandrada/pranna.es/issues"
+  },
+  "homepage": "https://github.com/valentinaandrada/pranna.es#readme"
+}
