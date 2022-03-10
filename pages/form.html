@@ -26,7 +26,7 @@
   <body>
     <!-- NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-md navbar-light nav">
-      <div class="container">
+      <div class="container px-0">
         <a class="navbar-brand" href="..\index.html"
           ><img
             class="img-fluid nav-logo"
@@ -72,22 +72,19 @@
         <div class="container py-5">
           <div class="row g-5 py-5">
             <div class="col-lg-6">
-              <div class="pb-4">
-                <h1>HACENOS TU PEDIDO</h1>
-                <p>
-                  Para pedidos mayoristas,
-                  <a href="contact.html">contactanos</a>
-                </p>
+              <div class="pb-3">
+                <h1 class="title">Pide tus pranna</h1>
+
               </div>
               <form action="" class="container ps-0 pb-5">
-                <fieldset class="row">
+                <fieldset class="row g-2 py-3">
                   <legend class="form-label fs-5">
                     ¡Combínalas como quieras!
                   </legend>
                   <div class="d-flex justify-content-between mt-2">
                     <div>
-                      <label for="sab-clasica" class="form-label"
-                        >Sabor CLASICA</label
+                      <label for="sab-clasica" class="form-label txt-title__item"
+                        >CLASICA</label
                       >
                       <p class="fw-light typo-min me-5 fst-italic">
                         Los clásicos son esas cosas que nunca cambian, porque
@@ -96,7 +93,7 @@
                       </p>
                     </div>
                     <div>
-                      <select name="sab-clasica" class="ms-2 text-center">
+                      <select name="sab-clasica" class="ms-2 text-center py-1">
                         <option value="2">2 unidades</option>
                         <option value="3">3 unidades</option>
                         <option value="4">4 unidades</option>
@@ -109,8 +106,8 @@
 
                   <div class="d-flex justify-content-between mt-2">
                     <div>
-                      <label for="sab-original" class="form-label"
-                        >Sabor ORIGINAL</label
+                      <label for="sab-original" class="form-label txt-title__item"
+                        >ORIGINAL</label
                       >
                       <p class="fw-light typo-min me-5 fst-italic">
                         Nuestra burger ORIGINAL tiene garbanzos y mix de
@@ -118,7 +115,7 @@
                       </p>
                     </div>
                     <div>
-                      <select name="sab-original" class="ms-2 text-center">
+                      <select name="sab-original" class="ms-2 text-center py-1">
                         <option value="2">2 unidades</option>
                         <option value="3">3 unidades</option>
                         <option value="4">4 unidades</option>
@@ -131,8 +128,8 @@
 
                   <div class="d-flex justify-content-between mt-2">
                     <div>
-                      <label for="sab-gourmet" class="form-label"
-                        >Sabor GOURMET</label
+                      <label for="sab-gourmet" class="form-label txt-title__item"
+                        >GOURMET</label
                       >
                       <p class="fw-light typo-min me-5 fst-italic">
                         El potente color verde que nos acampaña a todas partes
@@ -141,7 +138,7 @@
                       </p>
                     </div>
                     <div>
-                      <select name="sab-gourmet" class="ms-2 text-center">
+                      <select name="sab-gourmet" class="ms-2 text-center py-1">
                         <option value="2">2 unidades</option>
                         <option value="3">3 unidades</option>
                         <option value="4">4 unidades</option>
@@ -154,8 +151,8 @@
 
                   <div class="d-flex justify-content-between mt-2">
                     <div>
-                      <label for="sab-sabrosa" class="form-label"
-                        >Sabor SABROSA</label
+                      <label for="sab-sabrosa" class="form-label txt-title__item"
+                        >SABROSA</label
                       >
                       <p class="fw-light typo-min me-5 fst-italic">
                         ¿Sabéis cómo se dice cuando algo está sazonado perfecto,
@@ -165,7 +162,7 @@
                       </p>
                     </div>
                     <div>
-                      <select name="sab-sabrosa" class="ms-2 text-center">
+                      <select name="sab-sabrosa" class="ms-2 text-center py-1">
                         <option value="2">2 unidades</option>
                         <option value="3">3 unidades</option>
                         <option value="4">4 unidades</option>
@@ -177,7 +174,7 @@
                   </div>
                 </fieldset>
 
-                <fieldset class="row g-2">
+                <fieldset class="row g-2 py-3">
                   <legend class="form-label fs-5">Tus Datos</legend>
                   <div class="col-lg-6">
                     <input
@@ -185,6 +182,7 @@
                       type="text"
                       name="firstname"
                       placeholder="Nombre"
+                      required
                     />
                   </div>
                   <div class="col-lg-6">
@@ -193,6 +191,7 @@
                       type="text"
                       name="lastname"
                       placeholder="Apellido"
+                      required
                     />
                   </div>
                   <div class="col-lg-12">
@@ -201,6 +200,7 @@
                       type="email"
                       name="email"
                       placeholder="Correo electrónico"
+                      required
                     />
                   </div>
                   <div class="col-lg-12">
@@ -210,18 +210,20 @@
                       name="phone"
                       pattern="[0-9]+"
                       placeholder="Telefono"
+                      required
                     />
                   </div>
                 </fieldset>
 
-                <fieldset class="row g-2">
-                  <legend class="form-label mt-4">Datos de la Entrega</legend>
+                <fieldset class="row g-2 py-3">
+                  <legend class="form-label mt-4 fs-5">Datos de la Entrega</legend>
                   <div class="col-lg-12">
                     <input
                       class="form-control"
                       type="text"
                       name="address"
                       placeholder="Dirección de entrega"
+                      required
                     />
                   </div>
                   <div class="col-lg-8">
@@ -230,6 +232,7 @@
                       type="text"
                       name="city"
                       placeholder="Localidad"
+                      required
                     />
                   </div>
                   <div class="col-lg-4">
@@ -246,6 +249,7 @@
                       type="date"
                       name="date"
                       placeholder="Elige el día de entrega"
+                      required
                     />
                   </div>
                   <div class="col-md-12">
@@ -275,11 +279,15 @@
                   </div>
                 </fieldset>
 
-                <input type="submit" value="ENVIAR PEDIDO" class="btn btn-primary" />
-                <input type="reset" value="BORRAR" class="btn btn-primary" />
+                <input type="submit" value="ENVIAR PEDIDO" class="btn" />
+                <input type="reset" value="BORRAR DATOS" class="btn" />
               </form>
             </div>
             <div class="col-lg-6">
+              <p class="txt-bg text-center p-3">
+                Para pedidos mayoristas,
+                <a class="txt-link" href="contact.html">contactanos aquí</a>
+              </p>
               <img
                 src="..\img\order-img.jpg"
                 alt="Sabores de PRANNA"

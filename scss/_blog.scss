@@ -1,18 +1,26 @@
-.blogNews__item {
+.news__item {
   overflow: hidden;
   transition: transform 500ms ease;
+  height: 60vh;
+  cursor: context-menu;
+
+  &:hover {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
 }
 
 .item__content {
-  background-color: #ded8d5ce;
+  height: inherit;
+  background-color: #64646473;
+  color: $clr-secondary;
   padding: 1rem;
-  transform: translateY(85%);
+  transform: translateY(70%);
   transition: transform 500ms ease;
-}
-
-.blogNews__item:hover .item__content {
-  transform: translateY(0);
-  transition-delay: 500ms;
+  &:hover {
+    transform: translateY(0);
+    transition-delay: 500ms;
+  }
 }
 
 .bg-pt-sz {
@@ -21,21 +29,48 @@
 }
 
 .item1 {
-  background-image: url(../img/news-mayo.jpg);
+  background-image: url(../img/news-1.svg);
   @extend .bg-pt-sz;
 }
 
 .item2 {
-  background-image: url(../img/news-sabor.png);
+  background-image: url(../img/news-2.png);
   @extend .bg-pt-sz;
 }
 
 .item3 {
-  background-image: url(../img/news-mayo.jpg);
+  background-image: url(../img/news-3.svg);
   @extend .bg-pt-sz;
 }
 
 .item4 {
-  background-image: url(../img/news-sabor.png);
+  background-image: url(../img/news-4.svg);
   @extend .bg-pt-sz;
+}
+
+.btn__blog {
+  background-color: $clr-secondary;
+  border-color: $clr-secondary;
+  &:hover {
+    background-color: $clr-accent;
+    border-color: $clr-accent;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .blog__header {
+    z-index: 10;
+    width: 55%;
+    padding: 2rem;
+    background-color: #6464642f;
+  }
+
+  .blog__img {
+    position: absolute;
+    width: 50%;
+    right: 4.5rem;
+    top: 3rem;
+  }
+  
 }

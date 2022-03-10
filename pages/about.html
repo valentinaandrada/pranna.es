@@ -20,12 +20,14 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
 
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="..\css\styles.css" />
+
   </head>
   <body>
     <!-- NAVBAR -->
     <nav class="navbar fixed-top navbar-expand-md navbar-light nav">
-      <div class="container">
+      <div class="container px-0">
         <a class="navbar-brand" href="..\index.html"
           ><img
             class="img-fluid nav-logo"
@@ -49,7 +51,9 @@
         >
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="about.html">Nosotros</a>
+              <a class="nav-link active" aria-current="page" href="about.html"
+                >Nosotros</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="blog.html">Novedades</a>
@@ -66,26 +70,23 @@
     </nav>
 
     <main>
-      <!-- HERO -->
+      <!-- Section: SOBRE PRANNA -->
       <section class="bg-grad p-5">
         <div class="container pt-5">
           <div class="row g-5">
             <div class="col-md-6 mt-4 p-3 pt-5">
-              <h2 class="mb-4">Sobre PRANNA</h2>
+              <h2 class="mb-4 title">Sobre PRANNA</h2>
+              <p>
+                ¡Hola! Estamos encantados de contarte cuales
+              </p>
+              <br />
               <p>
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                 aut fugit, sed quia consequuntur magni dolores eos qui ratione
                 voluptatem sequi nesciunt. Neque porro quisquam est, qui
                 dolorem.
               </p>
-              <br>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                dolorem.
-              </p>
-              <br>
+              <br />
               <p>
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                 aut fugit, sed quia consequuntur magni dolores eos qui ratione
@@ -105,81 +106,92 @@
         </div>
       </section>
 
-
-      <!-- NUESTRO IMPACTO -->
+      <!-- Section: NUESTRO IMPACTO -->
       <section class="bg-light p-5">
         <div class="container pb-5">
-          <h2>Nuestro Impacto</h2>
-          <div class="row my-5 fw-light typo-min g-3 pb-5">
+          <h2 class="title">El futuro es plant-based, por eso pranna es...</h2>
+          <div class="row mb-5 mt-3 fw-light typo-min g-3 pb-5">
             <div class="col-md-6 col-lg-3">
-              <div class="card text-center">
+              <div class="card text-center bg-light border-light">
                 <img
-                  class="img-fluid card-img-top pt-3"
-                  src="..\img\random-img.png"
+                  class="img-fluid card-img-top"
+                  src="..\img\impact-1.svg"
                   alt="Imagen de beneficio de alimentación vegana"
                 />
                 <div class="card-body">
-                  <h4>Impacto1</h4>
-                  <p class="card-text py-2">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
-                    rem voluptatibus excepturi assumenda minus deleniti tenetur
-                    numquam pariatur quasi labore.
+                  <h4 class="txt-title__item">AMIGABLE CON EL PLANETA</h4>
+                  <p class="card-text p-2 txt-justify">
+                    Una dieta basada en plantas es probablemente la mejor forma
+                    de reducir tu impacto en el planeta Tierra, no sólo los
+                    gases de efecto invernadero, sino también la acidificación
+                    global, la eutrofización, el uso de la tierra y el uso del
+                    agua.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
-              <div class="card text-center">
+              <div class="card text-center bg-light border-light">
                 <img
-                  class="img-fluid card-img-top pt-3"
-                  src="..\img\random-img.png"
+                  class="img-fluid card-img-top"
+                  src="..\img\impact-2.svg"
                   alt="Imagen de beneficio de alimentación vegana"
                 />
                 <div class="card-body">
-                  <h4>Impacto1</h4>
-                  <p class="card-text py-2">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
-                    rem voluptatibus excepturi assumenda minus deleniti tenetur
-                    numquam pariatur quasi labore.
+                  <h4 class="txt-title__item">SALUDABLE Y BENEFICIOSA</h4>
+                  <p class="card-text p-2 txt-justify">
+                    Nuestra manera de comer influye en nuestro bienestar físico.
+                    Y no cabe duda: la alimentación basada en plantas es una
+                    apuesta por la naturalidad. Un retorno a los orígenes de
+                    nuestra propia dieta, apostando por alimentos libres de
+                    tóxicos y químicos.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
-              <div class="card text-center">
+              <div class="card text-center bg-light border-light">
                 <img
-                  class="img-fluid card-img-top pt-3"
-                  src="..\img\random-img.png"
+                  class="img-fluid card-img-top"
+                  src="..\img\impact-3.svg"
                   alt="Imagen de beneficio de alimentación vegana"
                 />
                 <div class="card-body">
-                  <h4>Impacto1</h4>
-                  <p class="card-text py-2">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
-                    rem voluptatibus excepturi assumenda minus deleniti tenetur
-                    numquam pariatur quasi labore.
+                  <h4 class="txt-title__item">
+                    SIN CRUELDAD <br />
+                    ANIMAL
+                  </h4>
+                  <p class="card-text p-2 txt-justify">
+                    Todos apartamos la mirada cuando vemos imágenes de
+                    mataderos. Pero es importante tomar conciencia del origen de
+                    lo que consumimos y elegir lo que más se alinea con lo que
+                    sentimos y pensamos respecto al tema.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
-              <div class="card text-center">
+              <div class="card text-center bg-light border-light">
                 <img
-                  class="img-fluid card-img-top pt-3"
-                  src="..\img\random-img.png"
+                  class="img-fluid card-img-top"
+                  src="..\img\impact-4.svg"
                   alt="Imagen de beneficio de alimentación vegana"
                 />
                 <div class="card-body">
-                  <h4>Impacto1</h4>
-                  <p class="card-text py-2">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
-                    rem voluptatibus excepturi assumenda minus deleniti tenetur
-                    numquam pariatur quasi labore.
+                  <h4 class="txt-title__item">
+                    ALIMENTO <br />
+                    VEGANO
+                  </h4>
+                  <p class="card-text p-2 txt-justify">
+                    Desde nuestro estado de ánimo hasta nuestro sistema
+                    inmunológico, la alimentación vegana nos proporciona una
+                    gran variedad de beneficios para la salud. Así como también
+                    una acción sumamente importante para proteger nuestro
+                    planeta.
                   </p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>

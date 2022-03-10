@@ -1,11 +1,11 @@
-@import 'variables';
+@import "variables";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: $ft-primary;
   font-size: 16px;
@@ -17,6 +17,11 @@ body {
 
 .nav {
   background-color: $clr-primary;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  text-transform: lowercase;
+  letter-spacing: 0.05rem;
+  opacity: 0.8;
 }
 
 .nav-logo {
@@ -27,15 +32,6 @@ body {
   display: none;
 }
 
-.typo-min {
-  font-size: 0.8rem;
-}
-
-.text-bg {
-  background-color: #6464642f;
-  font-style: italic;
-}
-
 .h60vh {
   height: 60vh;
 }
@@ -43,60 +39,104 @@ body {
 .btn {
   box-sizing: content-box;
   padding: 0.5rem 1.2rem;
-  border: 1px solid $clr-btn;
+  border: 1px solid $clr-accent;
   border-radius: 0.5rem;
   font-family: $ft-primary;
   font-size: 0.8rem;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
-  color: $clr-btn;
+  color: $clr-accent;
 
   &:hover {
-    background-color: $clr-btn;
-    color: $clr-primary;
+    background-color: $clr-accent;
+    color: $clr-secondary;
     text-decoration: none;
   }
 }
 
-.title {
-  font-family: $ft-accent;
-  font-weight: 600;
+// General text styles
+
+.typo-min {
+  font-size: 0.8rem;
+}
+
+.txt-bg {
   background-color: #6464642f;
-  display: inline;
+  font-style: italic;
 }
 
-.text-animate {
-  position: absolute;
-  right: 0;
-  width: 100;
-  background-color: $clr-secondary;
-  border-left: 1px solid $clr-btn;
-
-  animation: writing 5s infinite;
+.txt-clr {
+  color: $clr-accent;
 }
 
-@keyframes writing {
-  from {
-    width: 49%;
-  }
-  to {
-    width: 27%;
-  }
+.txt-justify {
+  text-align: justify;
 }
 
-.num {
+.txt-num {
   font-family: $ft-accent;
   font-weight: 700;
   font-size: 5rem;
   color: #6464641e;
 }
 
-.char {
+.txt-title__item {
   font-family: $ft-accent;
   font-weight: 500;
   font-size: 1.5rem;
+}
+
+.title {
+  font-family: $ft-accent;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  cursor: context-menu;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    border-bottom: 0.2rem solid $clr-accent;
+  }
+  
+  &:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+.txt-link {
   color: $clr-accent;
+  text-decoration: none;
+  &:hover {
+    color: $clr-accent;
+    font-size: 1.2rem;
+  }
+}
+
+.txt-anim {
+  position: absolute;
+  right: 0;
+  width: 100;
+  background-color: $clr-secondary;
+  animation: writing 3s infinite;
+  
+  @keyframes writing {
+    from {
+      width: 50%;
+    }
+    to {
+      width: 20%;
+    }
+  }
 }
 
 .card {
