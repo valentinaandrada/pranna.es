@@ -62,7 +62,7 @@
   <!-- PROJECTO FINAL: Sitio web de PRANNA, startup de venta de hamburguesas veganas en Barcelona -->
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light nav">
+    <nav class="navbar sticky-lg-top navbar-expand-lg navbar-light py-lg-2 nav">
       <div class="container">
         <a class="navbar-brand" href="..\index.html"
           ><img
@@ -71,7 +71,7 @@
             alt="Logo PRANNA"
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler mt-3"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -87,7 +87,7 @@
         >
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="pages\about.html">Nosotros</a>
+              <a class="nav-link" href="pages\about.html">Conocenos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages\blog.html">Novedades</a>
@@ -121,7 +121,7 @@
               de todos los días de forma <strong>práctica</strong>,
               <strong>rica</strong> y <strong>saludable</strong>.
             </p>
-            <p>
+            <p class="pb-4">
               Alentamos el
               <strong
                 >estilo de vida
@@ -132,13 +132,13 @@
               más saludables y un planeta
               <strong>libre de contaminación y crueldad animal.</strong>
             </p>
-            <a href="pages\form.html" class="btn mt-4" type="button">
-              ¡Pedí las tuyas!
+            <a href="pages\form.html" class="btn-accent" type="button">
+              ¡Pide las tuyas!
             </a>
           </div>
         </div>
         <img
-          class="img-fluid w-50 position-absolute end-0 d-none d-xl-block"
+          class="img-fluid w-50 position-absolute end-0 d-none d-xl-block mt-5 me-5"
           src="img\hero-img.png"
           alt="Hamburguesas PRANNA en tabla"
         />
@@ -154,7 +154,7 @@
               alt="Pranna packaging"
             />
             <div
-              class="col-md-4 col-lg-6 mt-sm-4 mt-md-0 py-4 py-md-0 align-self-xl-end pe-xl-5"
+              class="col-md-4 col-lg-6 mt-4 mt-md-0 py-4 py-md-0 align-self-xl-end pe-xl-5"
             >
               <h2 class="title">Sobre PRANNA</h2>
               <p class="pt-3 text-justify">
@@ -167,7 +167,7 @@
                 PRANNA es <strong>comida hecha con amor 🤍</strong
                 ><span class="txt-anim">&#160;</span>
               </p>
-              <button class="btn">Conoce mas</button>
+              <a href="pages\about.html" type="button" class="btn-white mt-2">Conoce mas</a>
             </div>
           </div>
         </div>
@@ -241,7 +241,7 @@
             No te quedes sin probar ninguno de nuestros sabores...
           </h2>
           <div class="row pt-4 g-2">
-            <div class="col-md-3 col-lg-3 col-sm-6">
+            <div class="col-6 col-md-3">
               <div class="card border-light animate__animated animate__flipInY">
                 <img
                   class="img-fluid"
@@ -258,7 +258,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-lg-3 col-sm-6">
+            <div class="col-6 col-md-3">
               <div
                 class="card border-light animate__animated animate__flipInY animate__delay-1s"
               >
@@ -276,7 +276,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-lg-3 col-sm-6">
+            <div class="col-6 col-md-3">
               <div
                 class="card border-light animate__animated animate__flipInY animate__delay-2s"
               >
@@ -295,7 +295,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-lg-3 col-sm-6">
+            <div class="col-6 col-md-3">
               <div
                 class="card border-light animate__animated animate__flipInY animate__delay-3s"
               >
@@ -322,185 +322,191 @@
       <!-- BOTON A FORMULARIO -->
       <div class="position-relative">
         <a
-          class="btn position-absolute start-50 translate-middle text-uppercase"
+          class="btn-accent position-absolute start-50 translate-middle text-uppercase"
           href="pages\form.html"
           >¡Combinalas como quieras!</a
         >
       </div>
 
       <!-- Section: TESTIMONIOS -->
-      <section class="p-3">
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner text-center">
-            <div class="carousel-item active px-md-5">
-              <div
-                class="d-md-flex align-items-center justify-content-center mx-auto"
-              >
-                <div class="mx-5 pt-5 pt-md-0 px-lg-5">
-                  <p class="fst-italic">
-                    "¡Que buena opción de hamburguesa vegana! Original es mi
-                    favorita sin duda. Son tan prácticas y rápidas de cocinar
-                    que no podría organizar mi semana sin mis prannas en el
-                    congelador."
-                  </p>
-                  <p>Alejandra</p>
+      <section class="p-5">
+        <div class="container">
+          <h2 class="title mt-3">
+            Ellos ya son parte, ¡sumate a la comunidad PRANNA!
+          </h2>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner text-center">
+              <div class="carousel-item active px-md-5">
+                <div
+                  class="d-md-flex align-items-center justify-content-center mx-auto"
+                >
+                  <div class="mx-5 pt-5 pt-md-0 px-lg-5">
+                    <p class="fst-italic">
+                      "¡Que buena opción de hamburguesa vegana! Original es mi
+                      favorita sin duda. Son tan prácticas y rápidas de cocinar
+                      que no podría organizar mi semana sin mis prannas en el
+                      congelador."
+                    </p>
+                    <p>Alejandra</p>
+                  </div>
+                  <img
+                    src="img\testimonial-1.png"
+                    alt="Foto de testimonio"
+                    class="img-fluid rounded-circle my-5 pe-md-5 me-lg-5"
+                    style="width: 250px"
+                  />
                 </div>
-                <img
-                  src="img\testimonial-1.png"
-                  alt="Foto de testimonio"
-                  class="img-fluid rounded-circle my-5 pe-md-5 me-lg-5"
-                  style="width: 250px"
-                />
               </div>
-            </div>
-            <div class="carousel-item px-md-5">
-              <div
-                class="d-md-flex align-items-center justify-content-center mx-auto"
-              >
-                <div class="mx-5 pt-5 pt-md-0 px-lg-5">
-                  <p class="fst-italic">
-                    "Son realmente deliciosas y.. ¡enormes! Tenerlas en el
-                    congelador me da la tranquilidad de llegar a casa sin tiempo
-                    y aún así comer rico y saludable."
-                  </p>
-                  <p>Sofía</p>
+              <div class="carousel-item px-md-5">
+                <div
+                  class="d-md-flex align-items-center justify-content-center mx-auto"
+                >
+                  <div class="mx-5 pt-5 pt-md-0 px-lg-5">
+                    <p class="fst-italic">
+                      "Son realmente deliciosas y.. ¡enormes! Tenerlas en el
+                      congelador me da la tranquilidad de llegar a casa sin tiempo
+                      y aún así comer rico y saludable."
+                    </p>
+                    <p>Sofía</p>
+                  </div>
+                  <img
+                    src="img\testimonial-3.png"
+                    alt="Foto de testimonio"
+                    class="img-fluid rounded-circle my-5 pe-md-5 me-lg-5"
+                    style="width: 250px"
+                  />
                 </div>
-                <img
-                  src="img\testimonial-3.png"
-                  alt="Foto de testimonio"
-                  class="img-fluid rounded-circle my-5 pe-md-5 me-lg-5"
-                  style="width: 250px"
-                />
               </div>
-            </div>
-            <div class="carousel-item px-md-5">
-              <div
-                class="d-md-flex align-items-center justify-content-center mx-auto"
-              >
-                <div class="mx-5 pt-5 pt-md-0 px-lg-5">
-                  <p class="fst-italic">
-                    "Las he probado en lo de un amigo, desde ese momento no me
-                    faltan mis hamburguesas pranna en el congelador. Destacar
-                    también la comodidad de hacer el pedido y recibir el paquete
-                    en el día y hora pactado. Impecable."
-                  </p>
-                  <p>Javier</p>
+              <div class="carousel-item px-md-5">
+                <div
+                  class="d-md-flex align-items-center justify-content-center mx-auto"
+                >
+                  <div class="mx-5 pt-5 pt-md-0 px-lg-5">
+                    <p class="fst-italic">
+                      "Las he probado en lo de un amigo, desde ese momento no me
+                      faltan mis hamburguesas pranna en el congelador. Destacar
+                      también la comodidad de hacer el pedido y recibir el paquete
+                      en el día y hora pactado. Impecable."
+                    </p>
+                    <p>Javier</p>
+                  </div>
+                  <img
+                    src="img\testimonial-2.png"
+                    alt="Foto de testimonio"
+                    class="img-fluid rounded-circle my-5 pe-md-5 me-lg-5"
+                    style="width: 250px"
+                  />
                 </div>
-                <img
-                  src="img\testimonial-2.png"
-                  alt="Foto de testimonio"
-                  class="img-fluid rounded-circle my-5 pe-md-5 me-lg-5"
-                  style="width: 250px"
-                />
               </div>
+  
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-light px-5 border-top">
-      <img
-        class="img-fluid position-absolute translate-middle-y ms-5 d-none d-lg-block"
-        style="z-index: 1; height: 250px"
-        src="img\pranna-logo-round.png"
-        alt="pranna-logo"
-      />
-      <div class="container-fluid">
-        <div
-          class="d-md-flex align-items-center justify-content-end pt-3 typo-min"
-        >
-          <div class="p-3">
-            <h4>Servicios</h4>
-            <div>
-              <a
-                href="pages\form.html"
-                class="text-decoration-none fw-light link-secondary"
-                >Pedido Minorista</a
-              ><br />
-              <a
-                href="pages\contact.html"
-                class="text-decoration-none fw-light link-secondary"
-                >Pedido Mayorista</a
-              >
-            </div>
-          </div>
-          <div class="p-3">
-            <h4>Empresa</h4>
-            <div>
-              <a
-                href="pages\about.html"
-                class="text-decoration-none fw-light link-secondary"
-                >Quienes Somos</a
-              ><br />
-              <a
-                href="pages\about.html"
-                class="text-decoration-none fw-light link-secondary"
-                >Nuestro Impacto</a
-              >
-            </div>
-          </div>
-          <div class="p-3">
-            <h4>Contacto</h4>
-            <div>
-              <a
-                href="mailto:pranna.es@gmail.com"
-                class="text-decoration-none fw-light link-secondary"
-                >pranna.es@gmail.com</a
-              ><br />
-              <a
-                href="tel:+34678567876"
-                class="text-decoration-none fw-light link-secondary"
-                >666 66 66 66</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="container-fluid pt-5 px-5 position-relative">
+    <footer class="bg-light px-5 pb-3 border-top">
+      <div class="container">
+        <img
+          class="img-fluid position-absolute translate-middle-y d-none d-lg-block logo-round"
+          src="img\pranna-logo-round.png"
+          alt="pranna-logo"
+        />
+        <div class="container-fluid">
           <div
-            class="d-md-flex align-items-center justify-content-md-between text-center"
+            class="d-md-flex align-items-center justify-content-end pt-3 typo-min"
           >
-            <p class="fw-light">© Pranna.es / Mejar saludable</p>
-            <div class="align-items-center">
-              <a
-                href="https://www.facebook.com/prannaes-109436358001067"
-                target="_blank"
-                ><i class="bi bi-facebook text-dark fs-4 m-1"></i
-              ></a>
-              <a href="https://www.instagram.com/pranna.es/" target="_blank"
-                ><i class="bi bi-instagram text-dark fs-4 m-1"></i
-              ></a>
+            <div class="p-3">
+              <h4>Servicios</h4>
+              <div>
+                <a
+                  href="pages\form.html"
+                  class="text-decoration-none fw-light link-secondary"
+                  >Pedido Minorista</a
+                ><br />
+                <a
+                  href="pages\contact.html"
+                  class="text-decoration-none fw-light link-secondary"
+                  >Pedido Mayorista</a
+                >
+              </div>
+            </div>
+            <div class="p-3">
+              <h4>Empresa</h4>
+              <div>
+                <a
+                  href="pages\about.html"
+                  class="text-decoration-none fw-light link-secondary"
+                  >Quienes Somos</a
+                ><br />
+                <a
+                  href="pages\about.html"
+                  class="text-decoration-none fw-light link-secondary"
+                  >Nuestro Impacto</a
+                >
+              </div>
+            </div>
+            <div class="p-3">
+              <h4>Contacto</h4>
+              <div>
+                <a
+                  href="mailto:pranna.es@gmail.com"
+                  class="text-decoration-none fw-light link-secondary"
+                  >pranna.es@gmail.com</a
+                ><br />
+                <a
+                  href="tel:+34678567876"
+                  class="text-decoration-none fw-light link-secondary"
+                  >666 66 66 66</a
+                >
+              </div>
+            </div>
+          </div>
+  
+          <div class="container-fluid pt-5 position-relative">
+            <div
+              class="d-md-flex align-items-center justify-content-md-between text-center"
+            >
+              <p class="fw-light typo-min">© Pranna.es / Mejar saludable</p>
+              <div class="align-items-center">
+                <a
+                  href="https://www.facebook.com/prannaes-109436358001067"
+                  target="_blank"
+                  ><i class="bi bi-facebook text-dark fs-4 m-1"></i
+                ></a>
+                <a href="https://www.instagram.com/pranna.es/" target="_blank"
+                  ><i class="bi bi-instagram text-dark fs-4 m-1"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@
   transform: translateY(70%);
   transition: transform 500ms ease;
   &:hover {
-    transform: translateY(0);
+    transform: translateY(50%);
     transition-delay: 500ms;
   }
 }
@@ -28,24 +28,25 @@
   background-size: cover;
 }
 
-.item1 {
-  background-image: url(../img/news-1.svg);
+@mixin bg-img($bg-img-src) {
+  background-image: $bg-img-src;
   @extend .bg-pt-sz;
+}
+
+.item1 {
+  @include bg-img(url(../img/news-1.svg))
 }
 
 .item2 {
-  background-image: url(../img/news-2.png);
-  @extend .bg-pt-sz;
+  @include bg-img(url(../img/news-2.png));
 }
 
 .item3 {
-  background-image: url(../img/news-3.svg);
-  @extend .bg-pt-sz;
+  @include bg-img(url(../img/news-3.svg));
 }
 
 .item4 {
-  background-image: url(../img/news-4.svg);
-  @extend .bg-pt-sz;
+  @include bg-img(url(../img/news-4.svg));
 }
 
 .btn__blog {
@@ -69,7 +70,7 @@
   .blog__img {
     position: absolute;
     width: 50%;
-    right: 4.5rem;
+    right: 3.5rem;
     top: 3rem;
   }
   

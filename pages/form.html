@@ -55,8 +55,8 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light nav">
-      <div class="container px-0">
+    <nav class="navbar sticky-lg-top navbar-expand-lg navbar-light py-lg-2 nav">
+      <div class="container">
         <a class="navbar-brand" href="..\index.html"
           ><img
             class="img-fluid nav-logo"
@@ -100,14 +100,14 @@
 
     <main>
       <!-- FORMULARIO -->
-      <section class="bg-grad pt-5 py-md-5">
-        <div class="container py-5">
+      <section class="bg-grad p-5 py-md-5">
+        <div class="container">
           <div class="row g-5 py-5">
             <div class="col-lg-6">
               <div class="pb-3">
                 <h1 class="title">Pide tus pranna</h1>
               </div>
-              <form action="" class="container ps-0 pb-5">
+              <form action="https://formsubmit.co/pranna.es@gmail.com" method="POST" class="container px-0 pb-md-5">
                 <fieldset class="row g-2 py-3">
                   <legend class="form-label fs-5">
                     ¡Combínalas como quieras!
@@ -331,8 +331,8 @@
                   </div>
                 </fieldset>
 
-                <input type="submit" value="ENVIAR PEDIDO" class="btn" />
-                <input type="reset" value="BORRAR DATOS" class="btn" />
+                <input type="submit" value="ENVIAR PEDIDO" class="btn-accent" />
+                <input type="reset" value="BORRAR DATOS" class="btn-accent" />
               </form>
             </div>
             <div class="col-lg-6">
@@ -352,17 +352,17 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-light px-5 border-top">
-      <img
-        class="img-fluid position-absolute translate-middle-y ms-5 d-none d-lg-block"
-        style="z-index: 1; height: 250px"
-        src="..\img\pranna-logo-round.png"
-        alt="pranna-logo"
-      />
-      <div class="container-fluid">
-        <div
-          class="d-md-flex align-items-center justify-content-end pt-3 typo-min"
-        >
+    <footer class="bg-light px-5 pb-3 border-top">
+      <div class="container">
+        <img
+          class="img-fluid position-absolute translate-middle-y d-none d-lg-block logo-round"
+          src="..\img\pranna-logo-round.png"
+          alt="pranna-logo"
+        />
+        <div class="container-fluid">
+          <div
+            class="d-md-flex align-items-center justify-content-end pt-3 typo-min"
+          >
           <div class="p-3">
             <h4>Servicios</h4>
             <div>
@@ -392,38 +392,38 @@
                 >Nuestro Impacto</a
               >
             </div>
-          </div>
-          <div class="p-3">
-            <h4>Contacto</h4>
-            <div>
-              <a
-                href="mailto:pranna.es@gmail.com"
-                class="text-decoration-none fw-light link-secondary"
-                >pranna.es@gmail.com</a
-              ><br />
-              <a
-                href="tel:+34678567876"
-                class="text-decoration-none fw-light link-secondary"
-                >666 66 66 66</a
-              >
+          </div>            <div class="p-3">
+              <h4>Contacto</h4>
+              <div>
+                <a
+                  href="mailto:pranna.es@gmail.com"
+                  class="text-decoration-none fw-light link-secondary"
+                  >pranna.es@gmail.com</a
+                ><br />
+                <a
+                  href="tel:+34678567876"
+                  class="text-decoration-none fw-light link-secondary"
+                  >666 66 66 66</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="container-fluid pt-5 px-5 position-relative">
-          <div
-            class="d-md-flex align-items-center justify-content-md-between text-center"
-          >
-            <p class="fw-light">© Pranna.es / Mejar saludable</p>
-            <div class="align-items-center">
-              <a
-                href="https://www.facebook.com/prannaes-109436358001067"
-                target="_blank"
-                ><i class="bi bi-facebook text-dark fs-4 m-1"></i
-              ></a>
-              <a href="https://www.instagram.com/pranna.es/" target="_blank"
-                ><i class="bi bi-instagram text-dark fs-4 m-1"></i
-              ></a>
+  
+          <div class="container-fluid pt-5 position-relative">
+            <div
+              class="d-md-flex align-items-center justify-content-md-between text-center"
+            >
+              <p class="fw-light typo-min">© Pranna.es / Mejar saludable</p>
+              <div class="align-items-center">
+                <a
+                  href="https://www.facebook.com/prannaes-109436358001067"
+                  target="_blank"
+                  ><i class="bi bi-facebook text-dark fs-4 m-1"></i
+                ></a>
+                <a href="https://www.instagram.com/pranna.es/" target="_blank"
+                  ><i class="bi bi-instagram text-dark fs-4 m-1"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>

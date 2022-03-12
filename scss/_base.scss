@@ -1,4 +1,4 @@
-@import "variables";
+// General
 
 * {
   margin: 0;
@@ -11,51 +11,69 @@ body {
   font-size: 16px;
 }
 
-.bg-grad {
-  background: linear-gradient(180deg, $clr-primary 50%, $clr-secondary 85%);
+@mixin height-vh($height) {
+  height: $height;
 }
 
-.nav {
-  background-color: $clr-primary;
-  border-radius: 0.5rem;
-  padding: 0 1rem;
-  text-transform: lowercase;
-  letter-spacing: 0.05rem;
-  opacity: 0.8;
-}
-
-.nav-logo {
-  width: 10rem;
+.h60vh {
+  @include height-vh(60vh);
 }
 
 .hidden {
   display: none;
 }
 
-.h60vh {
-  height: 60vh;
+// Background colors
+
+.bg-grad {
+  background: linear-gradient(180deg, $clr-primary 50%, $clr-secondary 85%);
 }
 
-.btn {
+// Nav-bar
+
+.nav {
+  background-color: $clr-primary;
+  padding: 0 1rem;
+  text-transform: lowercase;
+  letter-spacing: 0.05rem;
+}
+
+.nav-logo {
+  width: 10rem;
+}
+
+
+// Btns
+
+@mixin btn($btn-clr1, $btn-clr2, $btn-border-clr) {
   box-sizing: content-box;
+  display: inline-block;
   padding: 0.5rem 1.2rem;
-  border: 1px solid $clr-accent;
+  background: $btn-clr1;
+  border: 1px solid $btn-border-clr;
   border-radius: 0.5rem;
   font-family: $ft-primary;
-  font-size: 0.8rem;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
-  color: $clr-accent;
+  color: $btn-clr2;
 
   &:hover {
-    background-color: $clr-accent;
-    color: $clr-secondary;
-    text-decoration: none;
+    background: $btn-clr2;
+    color: $btn-clr1;
+    border: $btn-border-clr;
   }
 }
 
-// General text styles
+.btn-accent {
+  @include btn($clr-accent, $clr-secondary, $clr-accent);
+}
+
+.btn-white {
+  @include btn($clr-secondary, $clr-accent, $clr-accent);
+}
+
+// Text styles
 
 .typo-min {
   font-size: 0.8rem;
@@ -105,8 +123,9 @@ body {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
     border-bottom: 0.2rem solid $clr-accent;
+    z-index: 0;
   }
-  
+
   &:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -122,21 +141,35 @@ body {
   }
 }
 
-.txt-anim {
-  position: absolute;
-  right: 0;
-  width: 100;
-  background-color: $clr-secondary;
-  animation: writing 3s infinite;
-  
-  @keyframes writing {
-    from {
-      width: 50%;
-    }
-    to {
-      width: 20%;
+@media only screen and (min-width: 992px) {
+  .txt-anim {
+    position: absolute;
+    right: 0;
+    width: 100;
+    background-color: $clr-secondary;
+    animation: writing 3s infinite;
+
+    @keyframes writing {
+      from {
+        width: 50%;
+      }
+      to {
+        width: 20%;
+      }
     }
   }
+}
+
+
+// Images and video
+
+video[poster] {
+  object-fit: cover;
+}
+
+.logo-round {
+  z-index: 1; 
+  height: 15rem;
 }
 
 .card {
