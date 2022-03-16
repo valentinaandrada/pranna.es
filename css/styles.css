@@ -103,6 +103,7 @@ body {
 
 .title {
   font-family: "Oswald", sans-serif;
+  padding-bottom: 0.4rem;
   font-weight: 600;
   display: inline-block;
   position: relative;
@@ -182,11 +183,12 @@ video[poster] {
   background-color: #64646473;
   color: #f8f9fa;
   padding: 1rem;
-  transform: translateY(70%);
+  transform: translateY(75%);
   transition: transform 500ms ease;
+  cursor: pointer;
 }
 .item__content:hover {
-  transform: translateY(50%);
+  transform: translateY(30%);
   transition-delay: 500ms;
 }
 
@@ -233,6 +235,11 @@ video[poster] {
     width: 50%;
     right: 3.5rem;
     top: 3rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .blog__img {
+    width: 44%;
   }
 }
 

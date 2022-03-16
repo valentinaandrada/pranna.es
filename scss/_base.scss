@@ -107,6 +107,7 @@ body {
 
 .title {
   font-family: $ft-accent;
+  padding-bottom: 0.4rem;
   font-weight: 600;
   display: inline-block;
   position: relative;
@@ -159,7 +160,6 @@ body {
     }
   }
 }
-
 
 // Images and video
 
