@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Roboto:wght@100;300;400;700;900&display=swap');
+
+// Colors
+$primary:       #ded8d5 !default;
+$secondary:     #f8f9fa !default;
+$success:       #f37b57 !default;
+$info:          gray !default;
+
+// Fonts
+$font-family-base: "Roboto", sans-serif;
+$ft-accent: "Oswald", sans-serif;
+
+// Accordion
+$accordion-button-active-color: $success;
+
+// Forms
+$form-check-input-checked-color: $success;
+$form-select-border-width: 0;
+$form-select-border-color: white;
+$form-select-focus-border-color: white;
+$input-btn-border-width: 0;
+$input-border-color: white;
+
+// Cards
+$card-height: 100%;
+$form-select-focus-width: 0;
+$card-border-radius: 1rem;
+
+@import 'base';
+@import 'blog';
+
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
+@import '../node_modules/bootstrap/scss/bootstrap';

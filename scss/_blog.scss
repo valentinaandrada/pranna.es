@@ -1,7 +1,7 @@
 .news__item {
   overflow: hidden;
   transition: transform 500ms ease;
-  height: 60vh;
+  height: 50vh;
   cursor: context-menu;
 
   &:hover {
@@ -13,7 +13,7 @@
 .item__content {
   height: inherit;
   background-color: #64646473;
-  color: $clr-secondary;
+  color: $secondary;
   padding: 1rem;
   transform: translateY(75%);
   transition: transform 500ms ease;
@@ -35,7 +35,7 @@
 }
 
 .item1 {
-  @include bg-img(url(../img/news-1.svg))
+  @include bg-img(url(../img/news-1.png))
 }
 
 .item2 {
@@ -43,34 +43,31 @@
 }
 
 .item3 {
-  @include bg-img(url(../img/news-3.svg));
+  @include bg-img(url(../img/news-3.png));
 }
 
 .item4 {
-  @include bg-img(url(../img/news-4.svg));
+  @include bg-img(url(../img/news-4.png));
 }
 
 .btn__blog {
-  background-color: $clr-secondary;
-  border-color: $clr-secondary;
+  background-color: $secondary;
+  border-color: $secondary;
   &:hover {
-    background-color: $clr-accent;
-    border-color: $clr-accent;
+    background-color: $success;
+    border-color: $success;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
 
   .blog__header {
-    z-index: 10;
-    width: 55%;
-    padding: 2rem;
+    z-index: 2;
     background-color: #6464642f;
   }
 
   .blog__img {
     position: absolute;
-    width: 50%;
     right: 3.5rem;
     top: 3rem;
   }

@@ -7,7 +7,6 @@
 }
 
 body {
-  font-family: $ft-primary;
   font-size: 16px;
 }
 
@@ -26,13 +25,13 @@ body {
 // Background colors
 
 .bg-grad {
-  background: linear-gradient(180deg, $clr-primary 50%, $clr-secondary 85%);
+  background: linear-gradient(180deg, $primary 50%, $secondary 85%);
 }
 
 // Nav-bar
 
 .nav {
-  background-color: $clr-primary;
+  background-color: $primary;
   padding: 0 1rem;
   text-transform: lowercase;
   letter-spacing: 0.05rem;
@@ -52,7 +51,6 @@ body {
   background: $btn-clr1;
   border: 1px solid $btn-border-clr;
   border-radius: 0.5rem;
-  font-family: $ft-primary;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -66,11 +64,11 @@ body {
 }
 
 .btn-accent {
-  @include btn($clr-accent, $clr-secondary, $clr-accent);
+  @include btn($success, $secondary, $success);
 }
 
 .btn-white {
-  @include btn($clr-secondary, $clr-accent, $clr-accent);
+  @include btn($secondary, $success, $secondary);
 }
 
 // Text styles
@@ -82,10 +80,6 @@ body {
 .txt-bg {
   background-color: #6464642f;
   font-style: italic;
-}
-
-.txt-clr {
-  color: $clr-accent;
 }
 
 .txt-justify {
@@ -123,7 +117,7 @@ body {
     left: 0;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-    border-bottom: 0.2rem solid $clr-accent;
+    border-bottom: 0.2rem solid $success;
     z-index: 0;
   }
 
@@ -134,10 +128,10 @@ body {
 }
 
 .txt-link {
-  color: $clr-accent;
+  color: $success;
   text-decoration: none;
   &:hover {
-    color: $clr-accent;
+    color: $success;
     font-size: 1.2rem;
   }
 }
@@ -147,7 +141,7 @@ body {
     position: absolute;
     right: 0;
     width: 100;
-    background-color: $clr-secondary;
+    background-color: $secondary;
     animation: writing 3s infinite;
 
     @keyframes writing {
@@ -158,6 +152,12 @@ body {
         width: 20%;
       }
     }
+  }
+
+  .hero-img {
+    position: absolute;
+    right: 1rem;
+    width: 55%;
   }
 }
 
@@ -170,9 +170,4 @@ video[poster] {
 .logo-round {
   z-index: 1; 
   height: 15rem;
-}
-
-.card {
-  height: 100%;
-  border-radius: 1rem;
 }

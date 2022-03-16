@@ -36,26 +36,12 @@
     />
     <link rel="manifest" href="..\img\favicon\site.webmanifest" />
 
-    <!-- Bootstrap link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-
-    <!-- Bootstrap icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-    />
-
     <!-- Link to CSS -->
-    <link rel="stylesheet" href="..\css\styles.css" />
+    <link rel="stylesheet" href="..\css\custom.css" />
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar sticky-lg-top navbar-expand-lg navbar-light py-lg-2 nav">
+    <nav class="navbar sticky-md-top navbar-expand-lg navbar-light py-lg-2 nav">
       <div class="container">
         <a class="navbar-brand" href="..\index.html"
           ><img
@@ -80,12 +66,12 @@
         >
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Nosotros</a>
+              <a class="nav-link" href="about.html"
+                >Conócenos</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="blog.html"
-                >Novedades</a
-              >
+              <a class="nav-link active" aria-current="page" href="blog.html">Novedades</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="form.html">Pedidos</a>
@@ -101,17 +87,17 @@
     <main>
       <!-- HERO -->
       <section class="bg-grad p-3 p-sm-5">
-        <div class="container my-5 pt-md-5">
-          <div class="d-md-flex">
-            <div class="blog__header fw-light text-md-center">
-              <h2 class="mb-4 title">Formá parte de nuestra comunidad</h2>
+        <div class="container my-5">
+          <div class="row">
+            <div class=" col-lg-6 blog__header fw-light text-lg-center p-lg-5">
+              <h1 class="mb-4 title">Formá parte de nuestra comunidad</h1>
               <p>
                 En un mundo donde puedes ser cualquier cosa... ¡elige ser
                 PRANNA!
               </p>
               <p>
                 ¿Que esperas para ser ser parte de esta hermosa
-                <span class="fst-italic fw-bolder txt-clr"
+                <span class="fst-italic fw-bolder text-success"
                   >#comunidadpranna</span
                 >
                 ? <br />
@@ -119,7 +105,7 @@
                 amor. Amamos lo que hacemos y queremos que seas parte ¡Sumate!
               </p>
  
-              <p class="px-md-5">
+              <p class="px-lg-5">
                 ¡Enterate de las novedades y promociones de PRANNA primero que
                 nadie!
               </p>
@@ -127,7 +113,7 @@
                 Suscribirme a la newsletter
               </a>
             </div>
-            <div class="mt-5 text-center text-md-end blog__img">
+            <div class="col-lg-6 mt-5 text-center text-md-end blog__img d-none d-lg-block">
               <img
                 src="../img/blog-hero.png"
                 alt="Hamburguesas PRANNA"
@@ -142,9 +128,9 @@
       <section class="bg-light p-3 p-sm-5">
         <div class="container mb-5">
           <h2 class="title">¿Ya te enteraste?</h2>
-          <div class="row fw-light typo-min g-3 mt-5">
+          <div class="row fw-light g-3 mt-3">
             <div class="col-md-6 col-xl-3">
-              <div class="py-5 news__item item1">
+              <div class="news__item item1">
                 <div class="item__content typo-min">
                   <h4 class="txt-title__item">NUEVA MAYO VEGANA</h4>
                   <p>
@@ -153,14 +139,14 @@
                     disfrutar! ¿Te lo vas a perder? Encarga ahora desde nuestro
                     formulario.
                   </p>
-                  <a type="button" class="btn btn__blog" href="form.html"
+                  <a type="button" class="btn-white" href="form.html"
                     >Hacé tu pedido</a
                   >
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-xl-3">
-              <div class="py-5 news__item item2">
+              <div class="news__item item2">
                 <div class="item__content typo-min">
                   <h4 class="txt-title__item">¡ENVÍOS GRATIS!</h4>
                   <p>
@@ -168,14 +154,14 @@
                     domicilio, asi que sin excusas... Envíanos ya tu pedido
                     pranna para disfrutarlas hoy mismo!
                   </p>
-                  <a type="button" class="btn btn__blog" href="form.html"
+                  <a type="button" class="btn-white" href="form.html"
                     >Hacé tu pedido</a
                   >
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-xl-3">
-              <div class="py-5 news__item item3">
+              <div class=" news__item item3">
                 <div class="item__content typo-min">
                   <h4 class="txt-title__item">NUEVO CHORIZO VEGANO</h4>
                   <p>
@@ -184,14 +170,14 @@
                     es que día a día trabajamos para llevarles a sus platos las
                     más ricas opciones veganas.
                   </p>
-                  <a type="button" class="btn btn__blog" href="form.html"
+                  <a type="button" class="btn-white" href="form.html"
                     >Hacé tu pedido</a
                   >
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-xl-3">
-              <div class="py-5 news__item item4">
+              <div class="news__item item4">
                 <div class="item__content typo-min">
                   <h4 class="txt-title__item">ENCONTRANOS EN BARDO</h4>
                   <p>
@@ -209,11 +195,11 @@
       </section>
 
       <!-- Section: PREGUNTAS FRECUENTES -->
-      <section class="bg-light p-3 p-sm-5 pt-3">
-        <div class="container pb-5">
+      <section class="bg-light p-3">
+        <div class="container pb-lg-5">
           <h2 class="title mb-5">Preguntas frecuentes de nuestra comunidad</h2>
           <div
-            class="accordion accordion-flush pb-5"
+            class="accordion accordion-flush pb-lg-5 mb-lg-5"
             id="accordionFlushExample"
           >
             <div class="accordion-item">
@@ -282,22 +268,22 @@
                     preferidos de la comunidad...
                   </p>
                   <a
-                    class="text-decoration-none"
+                    class="text-decoration-none link-success"
                     href="https://www.instagram.com/stories/highlights/18274688233017130/"
                     >🥗 PRANNA con portobellos rellenos</a
                   ><br />
                   <a
-                    class="text-decoration-none"
+                    class="text-decoration-none link-success"
                     href="https://www.instagram.com/stories/highlights/18274688233017130/"
                     >🥗 PRANNA con salteado de verduras</a
                   ><br />
                   <a
-                    class="text-decoration-none"
+                    class="text-decoration-none link-success"
                     href="https://www.instagram.com/p/CZUm-t7vMSP/"
                     >🥗 PRANNA con risotto y ensalada</a
                   ><br />
                   <a
-                    class="text-decoration-none"
+                    class="text-decoration-none link-success"
                     href="https://www.instagram.com/p/CXvb2MtNBq6/"
                     >🥗 PRANNA entre panes con mayonesa vegana</a
                   >
@@ -372,17 +358,17 @@
                   <div class="d-flex">
                     <div>
                       <a
-                        class="text-decoration-none"
+                        class="text-decoration-none link-success"
                         href="https://goo.gl/maps/UgDagjRCwxGSWHN17"
                         >🍽️ BARDO Lomitería</a
                       ><br />
                       <a
-                        class="text-decoration-none"
+                        class="text-decoration-none link-success"
                         href="https://g.page/la-suegra-del-jardinero?share"
                         >🍽️ La suegra del Jardinero</a
                       ><br />
                       <a
-                        class="text-decoration-none"
+                        class="text-decoration-none link-success"
                         href="https://goo.gl/maps/aEkoaGGc1u9rb4MF8"
                         >🍽️ Papanato</a
                       >
@@ -397,78 +383,81 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-light p-3 px-sm-5 pb-3 border-top">
+    <footer class="bg-light px-3 px-sm-5 pb-3 border-top">
       <div class="container">
         <img
-          class="img-fluid position-absolute translate-middle-y d-none d-lg-block logo-round"
-          src="..\img\pranna-logo-round.png"
-          alt="pranna-logo"
+        class="img-fluid position-absolute translate-middle-y d-none d-lg-block logo-round"
+        src="..\img\pranna-logo-round.png"
+        alt="pranna-logo"
         />
-        <div>
+        <div class="container-fluid">
           <div
             class="d-md-flex align-items-center justify-content-end pt-3 typo-min"
           >
             <div class="py-2 p-sm-3">
-              <h4>Servicios</h4>
+              <p class="fs-6">Servicios</p>
               <div>
                 <a
                   href="form.html"
-                  class="text-decoration-none fw-light link-secondary"
+                  class="text-decoration-none link-info"
                   >Pedido Minorista</a
                 ><br />
                 <a
                   href="contact.html"
-                  class="text-decoration-none fw-light link-secondary"
+                  class="text-decoration-none link-info"
                   >Pedido Mayorista</a
                 >
               </div>
             </div>
             <div class="py-2 p-sm-3">
-              <h4>Empresa</h4>
+              <p class="fs-6">Empresa</p>
               <div>
                 <a
                   href="about.html"
-                  class="text-decoration-none fw-light link-secondary"
+                  class="text-decoration-none link-info"
                   >Quienes Somos</a
                 ><br />
                 <a
                   href="about.html"
-                  class="text-decoration-none fw-light link-secondary"
+                  class="text-decoration-none link-info"
                   >Nuestro Impacto</a
                 >
               </div>
             </div>
             <div class="py-2 p-sm-3">
-              <h4>Contacto</h4>
+              <p class="fs-6">Contacto</p>
               <div>
                 <a
                   href="mailto:pranna.es@gmail.com"
-                  class="text-decoration-none fw-light link-secondary"
+                  class="text-decoration-none link-info"
                   >pranna.es@gmail.com</a
                 ><br />
                 <a
                   href="tel:+34678567876"
-                  class="text-decoration-none fw-light link-secondary"
+                  class="text-decoration-none link-info"
                   >666 66 66 66</a
                 >
               </div>
             </div>
           </div>
-
+  
           <div class="container-fluid pt-5 position-relative">
             <div
               class="d-md-flex align-items-center justify-content-md-between text-center"
             >
               <p class="fw-light typo-min">© Pranna.es / Mejar saludable</p>
-              <div class="align-items-center">
+              <div>
                 <a
                   href="https://www.facebook.com/prannaes-109436358001067"
                   target="_blank"
-                  ><i class="bi bi-facebook text-dark fs-4 m-1"></i
-                ></a>
+                  class="pe-2"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg></a>
                 <a href="https://www.instagram.com/pranna.es/" target="_blank"
-                  ><i class="bi bi-instagram text-dark fs-4 m-1"></i
-                ></a>
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg></a>
               </div>
             </div>
           </div>
@@ -476,10 +465,7 @@
       </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="..\js\bootstrap.js"></script>
   </body>
 </html>
