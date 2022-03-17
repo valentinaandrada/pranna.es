@@ -1,7 +1,7 @@
 .news__item {
   overflow: hidden;
   transition: transform 500ms ease;
-  height: 50vh;
+  height: 30rem;
   cursor: context-menu;
 
   &:hover {
@@ -15,7 +15,7 @@
   background-color: #64646473;
   color: $secondary;
   padding: 1rem;
-  transform: translateY(75%);
+  transform: translateY(26.5rem);
   transition: transform 500ms ease;
   cursor: pointer;
   &:hover {
@@ -56,26 +56,5 @@
   &:hover {
     background-color: $success;
     border-color: $success;
-  }
-}
-
-@media screen and (min-width: 992px) {
-
-  .blog__header {
-    z-index: 2;
-    background-color: #6464642f;
-  }
-
-  .blog__img {
-    position: absolute;
-    right: 3.5rem;
-    top: 3rem;
-  }
-  
-}
-
-@media screen and (min-width: 1500px) {
-  .blog__img {
-    width: 44%;
   }
 }
