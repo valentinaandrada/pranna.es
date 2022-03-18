@@ -26,7 +26,7 @@ body {
   background-color: #ded8d5;
   padding: 0 1rem;
   text-transform: lowercase;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.04rem;
 }
 
 .nav-logo {
@@ -39,7 +39,7 @@ body {
   padding: 0.5rem 1.2rem;
   background: #f37b57;
   border: 1px solid #f37b57;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -57,7 +57,7 @@ body {
   padding: 0.5rem 1.2rem;
   background: #f8f9fa;
   border: 1px solid #f8f9fa;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -65,6 +65,24 @@ body {
 }
 .btn-white:hover {
   background: #f37b57;
+  color: #f8f9fa;
+  border: #f8f9fa;
+}
+
+.btn-black {
+  box-sizing: content-box;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: black;
+}
+.btn-black:hover {
+  background: black;
   color: #f8f9fa;
   border: #f8f9fa;
 }
@@ -12928,7 +12946,7 @@ textarea.form-control-lg {
   justify-content: center;
   width: 15%;
   padding: 0;
-  color: #fff;
+  color: #f37b57;
   text-align: center;
   background: none;
   border: 0;
@@ -12944,7 +12962,7 @@ textarea.form-control-lg {
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #fff;
+  color: #f37b57;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
@@ -12977,11 +12995,11 @@ textarea.form-control-lg {
   } ]
 } */
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f37b57'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f37b57'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .carousel-indicators {
