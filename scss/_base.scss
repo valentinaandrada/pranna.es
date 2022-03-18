@@ -157,6 +157,13 @@ body {
   }
 }
 
+@media only screen and (min-width: 1900px)  {
+  
+  .hero-img {
+    width: 1045px;
+  }
+}
+
 // Images and video
 
 video[poster] {

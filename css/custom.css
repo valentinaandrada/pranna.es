@@ -167,6 +167,11 @@ body {
     width: 55%;
   }
 }
+@media only screen and (min-width: 1900px) {
+  .hero-img {
+    width: 1045px;
+  }
+}
 video[poster] {
   object-fit: cover;
 }
@@ -197,7 +202,7 @@ video[poster] {
   cursor: pointer;
 }
 .item__content:hover {
-  transform: translateY(30%);
+  transform: translateY(50%);
   transition-delay: 500ms;
 }
 

@@ -38,6 +38,9 @@
 
     <!-- Link to CSS -->
     <link rel="stylesheet" href="../css/custom.css" />
+
+    <!-- Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -168,6 +171,9 @@
                 src="../img/contact-hero.jpg"
                 alt="Imagen PRANNA"
                 class="img-fluid"
+                data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-duration="500"
               />
             </div>
           </div>
@@ -263,6 +269,11 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="../js/bootstrap.js"></script>
   </body>
