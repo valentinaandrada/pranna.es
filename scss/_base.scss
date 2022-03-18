@@ -10,14 +10,6 @@ body {
   font-size: 16px;
 }
 
-@mixin height-vh($height) {
-  height: $height;
-}
-
-.h60vh {
-  @include height-vh(60vh);
-}
-
 .hidden {
   display: none;
 }
